@@ -30,6 +30,6 @@ function sendEmail(message){
 const cron = require('node-cron');
 
 // cron run at every 10 min
-cron.schedule('*/1 * * * *', function(){
+cron.schedule('*/10 * * * *', function(){
     sendEmail("Hey there, this email was sent to you automatically");
 });
